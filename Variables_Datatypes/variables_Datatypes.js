@@ -111,4 +111,4 @@ console.log(student);
 //Deleting a property from an object
 delete student.Age;
 console.log(student);
-
+    
