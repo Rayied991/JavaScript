@@ -18,4 +18,6 @@ const profile ={
     job: "SE"
 };
 console.log(profile);
-console.log(typeof(profile));
+console.log(typeof(profile)); //object
+console.log(typeof profile["name"]);//string
+

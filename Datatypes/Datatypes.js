@@ -63,6 +63,8 @@ console.log(student.Age);
 student["name"] = "Rahul Ahmed";
 console.log(student.name);
 
+console.log(typeof student["name"]);//string
+
 /*The object is defined as const how are we able to change
 the values of object as const?
 -> You cannot change on constant variable. But you can change 
@@ -77,4 +79,14 @@ console.log(2 - 1);
 console.log("123" + 1);//1231
 let p="123" + 2;
 console.log(typeof(p));
+//1
+let m = 16 + 4 + "Volvo";
+console.log(m);
+//2
+let n = "Volvo" + 16 + 4;
+console.log(n);
 
+// JavaScript evaluates expressions from left to right.
+// In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".
+
+// In the second example, since the first operand is a string, all operands are treated as strings.
