@@ -20,7 +20,7 @@ console.log("y:", y); // What is the value of y?
 console.log("z:", z); // What is the value of z?
 
 
-let a = 10;
+let a = 10;//10
 let b = a++ + ++a;// 10 + 12[a++ er jonno 1 barbe next time jokon a use hbe - its called post increment]
 let c = ++b;//23
 
@@ -29,10 +29,10 @@ console.log("b:", b); // What is the value of b?->23[it incresed by 1 because he
 console.log("c:", c); // What is the value of c?->23
 
 
-let m = 3;
-m = m++ + ++m + m++;//3 +5+ 5
+let m = 3;//3
+m = m++ + ++m + m++;//3 + 5+ 5=13
 
-console.log("m:", m); // What is the value of m?
+console.log("m:", m); // What is the value of m?->13
 
 
 let p = 2;
