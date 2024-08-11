@@ -11,6 +11,12 @@
 //shift method->delete from start & return
 //slice method->returns a piece of the array
 //splice method->change original array(add,remove,replace)
+//The join() method also joins all array elements into a string.It behaves just like toString(), but in addition you can specify the separator.
+//delete method->Using delete() leaves undefined holes in the array.Use pop() or shift() instead.
+//The copyWithin() method copies array elements to another position in an array
+//The flat() method creates a new array with sub-array elements concatenated to a specified depth
+//tospliced method->The difference between the new toSpliced() method and the old splice() method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array
+
 
 let foodItems=["Potato","apple","lichi","tomato"];
 foodItems.push("Chips");
@@ -78,3 +84,30 @@ console.log(arr);
 arr.splice();
 console.log(arr);//no change in original array
 
+//join method
+let  fruits = ["Banana", "Orange", "Apple", "Mango"];
+let a=fruits.join(" * ");
+console.log(a);
+
+// delete method 
+delete fruits[0];
+console.log(fruits);
+
+//copywithin method
+let c=["Banana", "Orange", "Apple", "Mango"];
+c.copyWithin(2, 0);
+console.log(c);
+c.copyWithin(2, 0,2);
+console.log(c);
+
+//flat method
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+console.log(myArr);
+console.log(newArr);
+
+//tospliced  method
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(0, 1);
+console.log(months);
+console.log(spliced);
