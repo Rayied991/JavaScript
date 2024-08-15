@@ -8,3 +8,23 @@ console.dir(mydiv.innerText);
 console.dir(mydiv.innerHTML);
 console.log(mydiv.innerHTML);
 
+//innerText->only text
+//innerHtml->html content+text
+
+
+//set text
+//changing ->dynamically in runtime
+mydiv.innerText="abcd";//set new text
+mydiv.innerHTML="<div>Inner html</div>";
+
+let heading=document.querySelector("h1");
+console.dir(heading);
+heading.innerText="New heading";
+heading.innerHTML="<i>New Heading</i>";
+
+//textContent->returns textual content even for hidden elements.
+console.dir(heading);
+console.log(heading);
+console.log(heading.innerText);
+console.log(heading.textContent);//can see hidden elements
+

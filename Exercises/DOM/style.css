@@ -1,0 +1,7 @@
+.box{
+    color: blue;
+    border: 2px solid tomato;
+    width: 50%;
+    text-align: center;
+    background-color: red;
+}
