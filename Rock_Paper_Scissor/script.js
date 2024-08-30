@@ -31,20 +31,23 @@ const drawGame=()=>{
 //     console.log("User Won");
 // };
 
-const showWinner=(userScore,userChoice,compChoice)=>{
-    if(userScore){
+const showWinner=(userWin,userChoice,compChoice)=>{
+    if(userWin){
+        userScore++;
+        user.innerText=userScore;
         console.log("You win");
         msg.innerText=`You win! ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="green";
-        userScore++;
-        user.innerText=userScore;
+       
+        
     }
     else{
+        compScore++;
+        comp.innerText=compScore;
         console.log("You lose");
         msg.innerText=`You Lose! ${compChoice} beats ${userChoice}`;
         msg.style.backgroundColor="red";
-        compScore++;
-        comp.innerText=compScore;
+        
     }
 
 };
@@ -68,20 +71,20 @@ const playGame=(userChoice)=>{
     // }
     // way-2
     else{
-        let userScore=true;
+        let userWin=true;
         if(userChoice === "rock" ){
             //paper/scissor
-            userScore =compChoice === "paper"? false:true;
+            userWin =compChoice === "paper"? false:true;
         }
         else if(userChoice === "paper"){
             // scissor, rock 
-            userScore= compChoice === "scissors"? false:true;
+            userWin= compChoice === "scissors"? false:true;
         }
         else{
             //rock,paper
-            userScore=compChoice === "rock"?false:true;
+            userWin=compChoice === "rock"?false:true;
         }
-        showWinner(userScore,userChoice,compChoice);
+        showWinner(userWin,userChoice,compChoice);
     }
 };
 
