@@ -1,0 +1,20 @@
+console.log("One");
+console.log("Two");
+console.log("Three");
+
+//Synchronous Programming-> One by one execute line by line
+//in this code in line-2 it will wait for line-1 complete his  execution  and then line-2 will execute and then line-3 will execute
+
+
+//Asynchronous Programming->
+console.log(1);
+console.log(2);
+console.log(3); 
+console.log("API"); 
+console.log(4);
+console.log(5);
+
+//here from line 1 to 3 running normally just like synchronous way.
+//but in line-4 it will wait for line-3 to complete his execution and then line-4 will execute and then line-5 will execute -this is the way
+//but in asynchronous programming in line 4 it is taking too much for execution
+///let the line 4 run and parallelly line 5 and all code will execute when line 4 executed show its output
