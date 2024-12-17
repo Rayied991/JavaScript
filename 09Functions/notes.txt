@@ -1,0 +1,12 @@
+Functions->
+A block of code.
+A set of statements that performs a task when it is called.
+Maintains a relationship with input and output.
+
+function fname(){
+
+}
+
+
+some function  might only return.In that case  we have to
+store them in a variable to show output.

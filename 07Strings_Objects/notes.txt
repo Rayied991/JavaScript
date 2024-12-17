@@ -1,0 +1,65 @@
+String->immutable(cannot change)
+array->mutable(can be changed)
+
+strings->
+toLowercase():convert to lower case
+toUppercase():convert to upper case
+
+//trim ->remove white space from both side
+//trimStart-> remove whitespace from start
+//trimEnd-> remove whitespace from end
+
+string length 
+const len=str.length;
+
+split->divide 
+const sentence="My name is Rayied";
+console.log(sentence.split()); //array format
+console.log(sentence.split('')); //separate every word
+console.log(sentence.split(' ')); //seperate every sentence
+
+//concat()
+add multiple strings
+
+//includes():
+console.log(last.includes('d'));
+//if available returns true else false
+
+Object->
+An unordered collection of key-value pairs.Each key-value pair 
+is called property.An entity having state and behavior(properties
+and method).     
+we declare object using {} and array as [].
+Object stays-> key:value pair.
+it doesn't matter which is before and which is after.
+Object is non-primitive datatype.
+
+get values of object->[dot notation]
+1.object name->person
+person.name
+person['name']
+
+set values of object->[bracket notation]
+1.object name->person
+person.name="Rakib"
+person['name']="Rakib"
+
+//fetch keys
+const keys=Object.keys(computer);
+console.log(keys);
+
+//fetch values
+const values=Object.values(computer);
+console.log(values);
+
+//delete property/key
+delete college.class;
+console.log(college);
+
+Array vs Object->
+Array stored data in ordered(sequential) collection.
+This is not true for object.
+    Data can be accessed in array using numerical index
+    [0],[1]....[n] . For object values are accessed calling
+    keys.
+    

@@ -1,0 +1,58 @@
+Array-> enables storing a collection of multiple items under a single variable name.
+Array methods->
+
+//end
+Push method-> add element at the end of the array
+Push()->parameter can add value one/multiple
+
+Pop method->(pop())-> it used to remove element at the end of the array
+when array is empty it became undefined.
+
+shift method->(shift())->it used to remove element at the start of the array
+unshift method->add element at the start of the array
+Push()->parameter can add value one/multiple
+
+
+//Basic array methods->
+includes()->it checks the element is available in the array or not.
+if available-returns true else returns false.its case-sensitive.
+indexof()-> fetch the index of a specific element.
+ if the element not found returns -1.
+ Array.isArray->Array(constructor), isArray(method).
+ it is used to find passed element is array or not.
+
+ join()->
+ returns an array as a string.
+ does not change the original array.
+ any separator can be specified(,).
+
+ //array.join:
+const realFriend=[ 'Rahim', 'karim', 'sakib' ];
+console.log(realFriend.join());
+console.log(realFriend.join('|'));
+console.log(realFriend.join('--'));
+
+ concat()->
+ concates two or more arrays.
+ returns a new array,containing the joined arrays.
+ does not change existing arrays.
+
+ slice()->
+ returns selected elements in an array, asa new array.
+ selects from a given start, up to a given end.
+ does not change the original array.
+
+ splice():
+ adds and/or remove array elements.
+ overrides the original array.
+
+ reverse()->
+ Reverses the elements in an array in place. This method mutates the array and returns a reference to the same array.
+it changes original array.
+
+
+sort()->
+it sorts and change original array.
+sorts alphabetically.
+in number sorting we may face some problems.
+ 

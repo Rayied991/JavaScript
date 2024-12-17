@@ -1,0 +1,19 @@
+Local storage
+localStorage.getItem('')
+localStorage.setItem('','')
+localStorage.removeItem('','')
+localStorage.length()
+localStorage.clear()
+
+//confusion using array,object
+while setting array-> it converts to string
+object[object object]
+
+
+solution->
+object=> JSON.Stringify()->String->JSON.parse()->object:localStorage
+
+advantage->
+normally in browser console if u refresh whatever you write all removed/refreshed.
+if we use localstorage if we refresh or close the page it will not removed after refresh.
+Session Storage

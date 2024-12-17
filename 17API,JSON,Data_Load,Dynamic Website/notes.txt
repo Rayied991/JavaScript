@@ -1,0 +1,33 @@
+API(Application Programming Interface)
+An API acts like a link that allows two applications to talk to each other.
+API is the part of the server that receives requests and send responses.
+
+JavaScript Object Notation(JSON)
+ JSON is a text format that is used to store and transport data
+JSON is language independent
+ JSON is data format
+
+JSON.stringify(user);
+stringify->Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
+const shopobj=JSON.parse(stringy);
+parse->Converts a JavaScript Object Notation (JSON) string into an object.
+
+
+//fetch API(it is a modern interface that allows you to make http requests to 
+servers from web browsers).
+ fetch(url)[get data from url]//return promise
+    .then(response=>response.json())[converts the data to js object]
+    .then(json=>console.log(json))[displays the js object]
+
+
+http methods:(by default get)
+CRUD(CREATE READ UPDATE DELETE)
+1.get
+2.post
+3.delete
+4.patch
+6.put    
+get vs post:
+put vs patch:
+put: already available then replace if not available CREATE new.
+patch:partially update existing  

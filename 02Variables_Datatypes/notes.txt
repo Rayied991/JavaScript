@@ -1,0 +1,44 @@
+let and const is block scope.
+var is global scope.
+
+// Variable keywords:
+// 	Var: Variable can be re-declared & updated. A global Scope Variable.
+// 	Let: Variable cannot be re-declared but can be updated. A block scope({}) variable.
+// 	Const: Variable cannot be re-declared or updated. A block scope({}) variable.
+//JS is a dynamically typed language
+//runtime type checking
+//= is assignment operator
+//a=b means value of b is assigned to a 
+//Reserved words cannot be used as a variable names(console,var,let..etc)
+// console a=2; //error
+// Console a=2; //not error
+// some cases:
+// Full Name; //Camel case[we use this]
+// Full_name//snake case
+// full -name//kebab case
+// FullName;//pascal case
+
+/Datatypes
+// Primitive Datatypes->7 types-> 
+// String
+// Number
+// Bigint
+// Boolean
+// Undefined
+// Null
+// Symbol
+
+// Non-Primitive Datatypes->Objects->Sub category->Arrays,Functions
+// Objects-> It is a collection of values
+// Generally objects stored key:value pair 
+
+//1
+let m = 16 + 4 + "Volvo";
+console.log(m);
+//2
+let n = "Volvo" + 16 + 4;
+console.log(n);
+// JavaScript evaluates expressions from left to right.
+// In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".
+
+// In the second example, since the first operand is a string, all operands are treated as strings.

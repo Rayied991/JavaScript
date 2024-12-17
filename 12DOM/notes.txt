@@ -1,0 +1,96 @@
+DOM-Document(file) Object(element) Model(Layout Structure)
+What is Node?
+Node is an object. In DOM Tree Document,Doctype,elements,text are known as nodes.
+What Dom defines?
+1.The events for all html elements
+2.The methods to access all html elements
+3.The Properties of all html elements.
+4.All HTML Elements as objects.
+
+//GetElementByTagName
+//ArrayLikeObject/HtmlCollections
+//getElementById(single)
+//search id which is not available-> return null
+
+
+//getElementsByClassName(multiple)->return collection
+//search class which is not available-> return empty array/collection
+
+
+
+//Query Selector all(related to css)[return static NodeList]
+//NodeList vs HtmlCollection
+
+
+//query Selector(only 1st)
+//innerText=show only texts:getting text
+//innerHtml=show all tag and texts:getting html
+//setAttribute[name of the attribute,value of the attribute]
+
+//style- all camelCase
+//classList[returns static DOMTokenList]
+
+//btnDelete.removeAttribute('disabled');: remove the attribute
+
+NodeList vs HtmlCollection
+
+
+Events->
+onclick-> one time clicked
+
+Eventlistener->
+pinkButton.addEventListener('click',makePink);
+type of event,callback function
+
+
+to fetch/set input text data-> use value instead of innertext
+
+
+mouseenter(): if hover then the actions will occur
+
+example:
+document.getElementById('mouse-enter').addEventListener('mouseenter',function(){
+    console.log('mouse enter');
+})
+
+mousemove():
+moving the mouse on the element 
+
+
+focus:it became bolder when in focus
+
+for text input->
+document.getElementById('text-field').addEventListener('focus',function(){
+    console.log("Event triggered inside the input field");
+})
+
+blur: when not in focus
+document.getElementById('text-field').addEventListener('blur',function(){
+    console.log("Event triggered inside the input field blur");
+})
+
+type events:
+keydown
+keypress
+keyup
+
+
+Bubble event:
+to stop bubble from happening use stopPropagation()[stopped levelwise]
+stopImmediatePropagation()[stop nearest propagation]
+
+
+parentNode,removeChildNode:
+const items=document.getElementsByClassName('item');
+for(const item of items){
+    item.addEventListener('click',function(event){
+        // console.log(event.target.parentNode);
+        event.target.parentNode.removeChild(event.target);
+    })
+}
+
+form reload prevent
+document.getElementById('btn-login').addEventListener('click',function(event){
+    console.log('clicked');
+    event.preventDefault();//reload prevent
+})

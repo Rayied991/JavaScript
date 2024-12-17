@@ -1,0 +1,103 @@
+What really is JavaScript?
+*it is a highly abstracted Programming language
+High Abstraction:
+An Abstraction is a way of-
+1. hiding the implementation details
+2.showing only the functionality to the users
+3.We don't have to handle resource management and memory allocation
+4.We don't have to handle garbage collection.[collects garbage automatically]
+5.Reduces details so that developers can focus on logic better.
+
+
+Garbage collection:
+1.JavaScript automatically collects unused data.
+2.free the memory with the help of an algorithm called mark-and-sweep.
+3.The garbage collector goes through the roots ,marking(remembering)them on its way.
+4.It then moves on to the references nad marks them as well.
+5.The cycle continues until the garbage collector visits all the roots and references
+6.The garbage collector removes all the objects,except the marked ones.
+
+JS is a JIT(Just In Time) Compiled Language.
+JIT-Interpretation
+Compiler-Machine code
+
+JIT:
+1.JS is not a purely interpreted language.
+2.Modern JS is JIT Compiled.
+3.JIT converts the entire code to machine code and execute them immediately.
+
+
+JS is a multi-paradigm Programming language.
+multi-paradigm:
+paradigm: code structure that will determine the style or a way of Programming.
+1.Procedural Programming
+2.OOP
+3.functional programming
+
+JS is a prototype based Programming language.
+1.In JS, everything(function,array,object) is object except primitive data.
+2.a prototypical object is an object used as a template from which to get the initial properties for a new objects.
+3.prototype is a blue print. 
+
+JS is a dynamically typed Programming language.
+1.when declare a variable do not need to specify which type of variable it is.
+2.JS engine infers what type this variable is based on the value assigned to at run time.
+3.As JS Determines the type at runtime we can re-declare at run time.
+
+JS runs on V8 Engine 
+Execution context:
+1.it is an environment.
+2.inside Execution context a piece of JS Code gets executed.
+3.variables,parameters and other information related to the piece of code get stored infers
+the Execution context. 
+
+two types of context->
+1.Global Execution context(GEC)
+2.function Execution context(FEC)
+
+GEC:
+whenever JS engine receives a script file, it first creates a default Execution context
+known as the Global Execution context(GEC).
+->GEC is base/default Execution context.
+->all JS code that is not inside of a function get executed
+->for every js file, there can be one GEC
+FEC:
+whenever a function is called, the JS engine creates a different type of Execution context
+known as a function Execution context(FEC).
+->every time a function is called, a new execution context is created for that function.
+->each function has its own execution function
+->since every function call gets its own FEC, there can be more than one FEC in the runtime of
+a script.
+
+execution context has 2 phases->
+1.Creation phase 
+2.execution phase
+Call stack:
+
+
+//Single threaded:
+1.it means only one statement is executed at a time.
+2.js has only one call stack
+3.js runs code line by line
+4.must finish Executing a piece of code before moving onto the next.
+
+//synchronous(serial wise):
+
+//asynchronous:
+
+Promise all:
+all data load 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
